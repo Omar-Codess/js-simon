@@ -21,3 +21,18 @@
     //     hai indovinato questo numero
     // else 
     //     hai sbagliato
+
+
+
+// const cpuNumber = Math.floor(Math.random() * 101);
+// console.log(cpuNumber);
+let cpuArray = [];
+while (cpuArray.length < 5) {
+    cpuArray.push(Math.floor(Math.random() * 101));
+}
+
+console.log(cpuArray);
+
+
+
+    
