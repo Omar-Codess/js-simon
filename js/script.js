@@ -24,11 +24,14 @@
 
 
 
-// const cpuNumber = Math.floor(Math.random() * 101);
-// console.log(cpuNumber);
+const rdnNums = document.getElementById("cpu-numbers");
+console.log(rdnNums);
+
+
 let cpuArray = [];
 while (cpuArray.length < 5) {
     cpuArray.push(Math.floor(Math.random() * 101));
+    rdnNums.innerHTML = cpuArray
 }
 
 console.log(cpuArray);
