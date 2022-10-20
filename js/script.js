@@ -8,7 +8,7 @@
     // innerHTML
 
 // Faccio partire un timer di 30 secondi
-    // funzione setInterval
+    // funzione setTimeout
 
 // Al termine dei 30 secondi faccio sparire i numeri
     // funzione clearInterval
@@ -24,18 +24,26 @@
 
 
 
-const rdnNums = document.getElementById("cpu-numbers");
-console.log(rdnNums);
+const cpuNumbers = document.getElementById("cpu-numbers");
+console.log(cpuNumbers);
 
 
 let cpuArray = [];
 while (cpuArray.length < 5) {
     cpuArray.push(Math.floor(Math.random() * 101));
-    rdnNums.innerHTML = cpuArray
+    cpuNumbers.innerHTML = cpuArray
 }
 
 console.log(cpuArray);
 
 
-
+const myTimeout = setTimeout(timeout, 3000)
+function timeout(params) {
+    document.getElementById("timer")
+    setTimeout(() => {
+        clearTimeout(myTimeout);
+        timer.innerHTML = "";
+        console.log("Tempo scaduto!");
+    });
+}
     
