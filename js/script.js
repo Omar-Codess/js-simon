@@ -37,7 +37,7 @@ while (cpuArray.length < 5) {
 console.log(cpuArray);
 
 
-const myTimeout = setTimeout(timeout, 3000)
+const myTimeout = setTimeout(timeout, 5000)
 function timeout(params) {
     document.getElementById("timer")
     setTimeout(() => {
